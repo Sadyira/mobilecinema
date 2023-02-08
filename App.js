@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React, {useState} from 'react';
 import { Trending } from './componentes/Trending';
+import { DetailMovie } from './componentes/detail';
+
 //import Trending from '/home/sadnena/mobilecinema/componentes/Trending.jsx';
 //import detail from './componentes/detail';
 
