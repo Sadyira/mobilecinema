@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f6bb1596-9783-40e1-93a5-aea1901026f3"
+      }
+    },
+    "owner": "sadyira"
   }
 }

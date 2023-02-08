@@ -1,11 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import { Trending } from './componentes/Trending';
+//import Trending from '/home/sadnena/mobilecinema/componentes/Trending.jsx';
+//import detail from './componentes/detail';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <Text>
+        Hola mundo
+      </Text> */}
+      <Trending/>
     </View>
   );
 }
