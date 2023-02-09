@@ -248,14 +248,14 @@ export const Trending =  () =>{
          <TouchableOpacity
         onPress={() => setPage(page + 1)}
         activeOpacity={0.7}
-        style={{ padding: 10, backgroundColor: "rgba(0,0,0, 0.3)", width: 100, alignSelf: 'flex-end', alignItems: 'center'}}
+        style={{ padding: 10, backgroundColor: "rgba(0,0,0, 0.3)", width: 100, alignSelf: 'flex-start', alignItems: 'center'}}
       >
         <Text style={{ fontWeight: 'bold'}}>siguiente</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => page>1? setPage(page - 1): setPage(1)}
         activeOpacity={0.7}
-        style={{ padding: 10, backgroundColor: "rgba(0,0,0, 0.3)", width: 100, alignSelf: 'flex-start',  alignItems: 'center' }}
+        style={{ padding: 10, backgroundColor: "rgba(0,0,0, 0.3)", width: 100, alignSelf: 'flex-end',  alignItems: 'center' }}
       >
         <Text style={{ fontWeight: 'bold'}}>volver</Text>
       </TouchableOpacity>
