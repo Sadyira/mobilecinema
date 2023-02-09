@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import SearchBar from './detail';
+import SearchBar from './Searchbar';
 
 const Header = () => {
   return (
-    <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>Trending Movies</Text>
+    <View style={stylesHeader.headerContainer}>
+      <Text style={stylesHeader.headerText}>Trending Movies</Text>
       {/* <SearchBar/> */}
     </View>
   );
 };
 
-const styles = StyleSheet.create({
+const stylesHeader = StyleSheet.create({
   headerContainer: {
     display:'flex', 
     flexDirection: 'row',
