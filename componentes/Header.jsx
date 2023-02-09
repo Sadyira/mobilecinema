@@ -13,22 +13,19 @@ const Header = () => {
 
 const stylesHeader = StyleSheet.create({
   headerContainer: {
-    display:'flex', 
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+
     backgroundColor: 'rgba(0,0,0,0.3)',
-    height: 50,
+    height: 20,
     width: '100%',
     alignItems: 'flex-start',
     paddingHorizontal: 20,
-    
+   
   },
   headerText: {
     alignSelf: 'center',
     fontSize: 15,
     fontWeight: 'bold',
     color: 'white',
-    fontFamily: 'Arial',
   },
 });
 

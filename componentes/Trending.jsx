@@ -16,8 +16,7 @@ export const Trending =  () =>{
         console.error(error);
       }
     }
-    list()}, [page])
-    ;
+    list()}, [page]);
         const Header =(pelis)=> {
           return(
             <View style={cardstyles.containercard}>
@@ -50,7 +49,7 @@ export const Trending =  () =>{
           loadingContainer: {
             flex: 1,
             backgroundColor: '#fff',
-            alignItems: 'left',
+            alignItems: 'center',
             justifyContent: 'center',
           },
         });
@@ -58,7 +57,8 @@ export const Trending =  () =>{
           containercard:{
             flex: 1,
             paddingBottom: 5,
-            paddingLeft: 15
+            paddingLeft: 15,
+            paddingTop:7
           },
           card_template_body:{
             width: 300,
@@ -78,8 +78,8 @@ export const Trending =  () =>{
             height: 300,
             boxShadow: "10px 10px 17px -12px rgba(0,0,0,0.75)",
             borderRadius : 10,
-            justifyContent: "left",
-            alignItems: "left",
+            justifyContent: "center",
+            alignItems: "center",
             position: 'relative'
           },
           text_container_body:{
@@ -91,8 +91,8 @@ export const Trending =  () =>{
             backgroundColor: "rgba(0,0,0, 0.3)",
             borderBottomLeftRadius : 10,
             borderBottomRightRadius: 10,
-            justifyContent: "right",
-            alignItems: "right",
+            justifyContent: "center",
+            alignItems: "center",
             
           },
           text_container:{
@@ -105,7 +105,7 @@ export const Trending =  () =>{
             borderBottomLeftRadius : 10,
             borderBottomRightRadius: 10,
             justifyContent: "center",
-            alignItems: "right",
+            alignItems: "center",
             
           },
           card_title: {
@@ -118,6 +118,13 @@ export const Trending =  () =>{
       return (
         
       <View>
+        <View style={{ paddingTop: 40, alignItems: 'center'}}>
+        <Text style={{alignSelf: 'center',
+          fontSize: 20,
+          fontWeight: 'bold',
+          color: "rgba(0,0,0, 0.5)",}}>Trending Movies</Text>
+        </View>
+
           <AccordionList
           list={peliculas}
           header={(item, index) => Header(item)}
